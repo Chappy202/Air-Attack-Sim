@@ -8,5 +8,9 @@ namespace Program.Classes
 {
     class FileHandler
     {
+        public void sdsd()
+        {
+            Console.WriteLine("sdasda");
+        }
     }
 }

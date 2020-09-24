@@ -31,6 +31,13 @@
             this.pnlCanvas = new System.Windows.Forms.Panel();
             this.flpnlObjects = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCanvas
@@ -55,10 +62,73 @@
             // 
             this.pnlHeader.AutoSize = true;
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlHeader.Controls.Add(this.btnExit);
+            this.pnlHeader.Controls.Add(this.btnReports);
+            this.pnlHeader.Controls.Add(this.btnClear);
+            this.pnlHeader.Controls.Add(this.btnReset);
+            this.pnlHeader.Controls.Add(this.btnStop);
+            this.pnlHeader.Controls.Add(this.btnStart);
             this.pnlHeader.Location = new System.Drawing.Point(12, 12);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(772, 41);
+            this.pnlHeader.Size = new System.Drawing.Size(772, 44);
             this.pnlHeader.TabIndex = 3;
+            // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(3, 3);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(130, 38);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "Start Simulation";
+            this.btnStart.UseVisualStyleBackColor = true;
+            // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(139, 3);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(130, 38);
+            this.btnStop.TabIndex = 1;
+            this.btnStop.Text = "Stop Simulation";
+            this.btnStop.UseVisualStyleBackColor = true;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(275, 3);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(130, 38);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset Simulation";
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(411, 3);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(130, 38);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear Simulation";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnReports
+            // 
+            this.btnReports.Location = new System.Drawing.Point(547, 3);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(130, 38);
+            this.btnReports.TabIndex = 4;
+            this.btnReports.Text = "Simulation Reports";
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(683, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(86, 38);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmMain
             // 
@@ -70,6 +140,8 @@
             this.Controls.Add(this.pnlCanvas);
             this.Name = "frmMain";
             this.Text = "Simulation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.pnlHeader.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +152,12 @@
         private System.Windows.Forms.Panel pnlCanvas;
         private System.Windows.Forms.FlowLayoutPanel flpnlObjects;
         private System.Windows.Forms.Panel pnlHeader;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

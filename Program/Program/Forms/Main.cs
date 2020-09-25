@@ -43,6 +43,18 @@ namespace Program
             reports.ShowDialog();
         }
 
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            Thread planeThread = new Thread(new ThreadStart(movePlane));
+            planeThread.Start();
+
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            stop = true;
+        }
+
         // ##############################################
         // EVENTS
         // ##############################################
@@ -65,25 +77,29 @@ namespace Program
         }
 
         public bool stop = false;
-        private void btnStart_Click(object sender, EventArgs e)
+
+        public void movePlane()
         {
             bool Edge = false;
             while (!stop)
             {
-                for (int i = 0; i < 80; i++)
+                for (int i = 0; i < 50; i++)
                 {
                     int X = pbxPlane.Location.X - 5;
                     int Y = pbxPlane.Location.Y;
-                    pbxPlane.Location = new Point(X, Y);
+                    if (pbxPlane.InvokeRequired)
+                    {
+                        MethodInvoker AssignnMethodToControl = new MethodInvoker(movePlane);
+                        pbxPlane.Invoke(AssignnMethodToControl);
+                    }
+                    else
+                    {
+                        pbxPlane.Location = new Point(X, Y);
+                    }
                     Thread.Sleep(50);
                 }
             }
-            
         }
-
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            stop = true;
-        }
+        
     }
 }

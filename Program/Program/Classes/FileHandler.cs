@@ -8,5 +8,9 @@ namespace Program.Classes
 {
     class FileHandler
     {
+        public FileHandler()
+        {
+            // Initialization code goes here
+        }
     }
 }

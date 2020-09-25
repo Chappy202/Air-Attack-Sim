@@ -9,9 +9,12 @@ namespace Program.Classes
 {
     class DataHandler
     {
+<<<<<<< Updated upstream
+=======
         public DataHandler()
         {
-            MessageBox.Show("Something");
+            // Initialization code goes here
         }
+>>>>>>> Stashed changes
     }
 }

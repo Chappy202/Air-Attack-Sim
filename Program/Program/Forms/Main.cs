@@ -19,6 +19,12 @@ namespace Program
         {
             InitializeComponent();
         }
+        // ##############################################
+        // GLOBAL VARIABLES
+        // ##############################################
+        public string selectedPlane = "None";
+        public string[] planes = new string[]{ "pbxLockheed", "pbxBoeingp8", "pbxDessault", "pbxBoeinEa" };
+
 
         // ##############################################
         // BUTTONS
@@ -64,6 +70,68 @@ namespace Program
             ExitApp();
         }
 
+        private void pbxLockheed_Click(object sender, EventArgs e)
+        {
+            if (selectedPlane == "None")
+            {
+                selectedPlane = "pbxLockheed";
+                pbxLockheed.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                selectedPlane = "pbxLockheed";
+                pbxLockheed.BackColor = Color.LightGreen;
+                updatePlaneSelection();
+            }
+            
+        }
+
+        private void pbxBoeingp8_Click(object sender, EventArgs e)
+        {
+            if (selectedPlane == "None")
+            {
+                selectedPlane = "pbxBoeingp8";
+                pbxBoeingp8.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                selectedPlane = "pbxBoeingp8";
+                pbxBoeingp8.BackColor = Color.LightGreen;
+                updatePlaneSelection();
+            }
+        }
+
+        private void pbxDessault_Click(object sender, EventArgs e)
+        {
+            if (selectedPlane == "None")
+            {
+                selectedPlane = "pbxDessault";
+                pbxDessault.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                selectedPlane = "pbxDessault";
+                pbxDessault.BackColor = Color.LightGreen;
+                updatePlaneSelection();
+            }
+
+        }
+
+        private void pbxBoeinEa_Click(object sender, EventArgs e)
+        {
+            if (selectedPlane == "None")
+            {
+                selectedPlane = "pbxBoeinEa";
+                pbxBoeinEa.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                selectedPlane = "pbxBoeinEa";
+                pbxBoeinEa.BackColor = Color.LightGreen;
+                updatePlaneSelection();
+            }
+        }
+
         // ##############################################
         // METHODS
         // ##############################################
@@ -80,26 +148,49 @@ namespace Program
 
         public void movePlane()
         {
-            bool Edge = false;
-            while (!stop)
+            
+        }
+
+        public void updatePlaneSelection()
+        {
+            if (selectedPlane == planes[0])
             {
-                for (int i = 0; i < 50; i++)
-                {
-                    int X = pbxPlane.Location.X - 5;
-                    int Y = pbxPlane.Location.Y;
-                    if (pbxPlane.InvokeRequired)
-                    {
-                        MethodInvoker AssignnMethodToControl = new MethodInvoker(movePlane);
-                        pbxPlane.Invoke(AssignnMethodToControl);
-                    }
-                    else
-                    {
-                        pbxPlane.Location = new Point(X, Y);
-                    }
-                    Thread.Sleep(50);
-                }
+                pbxBoeingp8.BackColor = Color.LightBlue;
+            }
+            else if (selectedPlane == planes[1])
+            {
+                pbxBoeinEa.BackColor = Color.LightBlue;
+            }
+            else if (selectedPlane == planes[2])
+            {
+                pbxDessault.BackColor = Color.LightBlue;
+            }
+            else if (selectedPlane == planes[3])
+            {
+                pbxLockheed.BackColor = Color.LightBlue;
             }
         }
-        
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            // Assign objects
+            pbxStart.Image = imglObjects.Images[10];
+            pbxEnd.Image = imglObjects.Images[4];
+            pbxAA.Image = imglObjects.Images[0];
+            pbxArtilary.Image = imglObjects.Images[1];
+            pbxBuilding.Image = imglObjects.Images[2];
+            pbxCafeteria.Image = imglObjects.Images[3];
+            pbxHangar.Image = imglObjects.Images[5];
+            pbxHQ.Image = imglObjects.Images[6];
+            pbxMed.Image = imglObjects.Images[7];
+            pbxRadar.Image = imglObjects.Images[9];
+            pbxTent.Image = imglObjects.Images[11];
+
+            // Assign planes
+            pbxLockheed.Image = imglPlanes.Images[3];
+            pbxBoeingp8.Image = imglPlanes.Images[0];
+            pbxDessault.Image = imglPlanes.Images[2];
+            pbxBoeinEa.Image = imglPlanes.Images[1];
+        }
     }
 }

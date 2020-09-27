@@ -139,6 +139,14 @@
             this.pbx87 = new System.Windows.Forms.PictureBox();
             this.pbx88 = new System.Windows.Forms.PictureBox();
             this.imglObjects = new System.Windows.Forms.ImageList(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSelect = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pbxLockheed = new System.Windows.Forms.PictureBox();
+            this.pbxBoeingp8 = new System.Windows.Forms.PictureBox();
+            this.pbxDessault = new System.Windows.Forms.PictureBox();
+            this.pbxBoeinEa = new System.Windows.Forms.PictureBox();
+            this.imglPlanes = new System.Windows.Forms.ImageList(this.components);
             this.flpnlObjects.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEnd)).BeginInit();
@@ -241,6 +249,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx86)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx87)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx88)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLockheed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBoeingp8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessault)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBoeinEa)).BeginInit();
             this.SuspendLayout();
             // 
             // flpnlObjects
@@ -257,9 +270,9 @@
             this.flpnlObjects.Controls.Add(this.pbxRadar);
             this.flpnlObjects.Controls.Add(this.pbxCafeteria);
             this.flpnlObjects.Controls.Add(this.pbxBuilding);
-            this.flpnlObjects.Location = new System.Drawing.Point(790, 12);
+            this.flpnlObjects.Location = new System.Drawing.Point(790, 62);
             this.flpnlObjects.Name = "flpnlObjects";
-            this.flpnlObjects.Size = new System.Drawing.Size(285, 613);
+            this.flpnlObjects.Size = new System.Drawing.Size(285, 233);
             this.flpnlObjects.TabIndex = 2;
             this.flpnlObjects.TabStop = true;
             // 
@@ -1342,14 +1355,100 @@
             this.imglObjects.Images.SetKeyName(10, "start.png");
             this.imglObjects.Images.SetKeyName(11, "tent.png");
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(790, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 29);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Objects";
+            // 
+            // lblSelect
+            // 
+            this.lblSelect.AutoSize = true;
+            this.lblSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelect.Location = new System.Drawing.Point(790, 310);
+            this.lblSelect.Name = "lblSelect";
+            this.lblSelect.Size = new System.Drawing.Size(180, 29);
+            this.lblSelect.TabIndex = 6;
+            this.lblSelect.Text = "Select a plane";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.flowLayoutPanel1.Controls.Add(this.pbxLockheed);
+            this.flowLayoutPanel1.Controls.Add(this.pbxBoeingp8);
+            this.flowLayoutPanel1.Controls.Add(this.pbxDessault);
+            this.flowLayoutPanel1.Controls.Add(this.pbxBoeinEa);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(790, 342);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 283);
+            this.flowLayoutPanel1.TabIndex = 100;
+            this.flowLayoutPanel1.TabStop = true;
+            // 
+            // pbxLockheed
+            // 
+            this.pbxLockheed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pbxLockheed.Location = new System.Drawing.Point(3, 3);
+            this.pbxLockheed.Name = "pbxLockheed";
+            this.pbxLockheed.Size = new System.Drawing.Size(64, 64);
+            this.pbxLockheed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxLockheed.TabIndex = 88;
+            this.pbxLockheed.TabStop = false;
+            this.pbxLockheed.Click += new System.EventHandler(this.pbxLockheed_Click);
+            // 
+            // pbxBoeingp8
+            // 
+            this.pbxBoeingp8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pbxBoeingp8.Location = new System.Drawing.Point(73, 3);
+            this.pbxBoeingp8.Name = "pbxBoeingp8";
+            this.pbxBoeingp8.Size = new System.Drawing.Size(64, 64);
+            this.pbxBoeingp8.TabIndex = 89;
+            this.pbxBoeingp8.TabStop = false;
+            this.pbxBoeingp8.Click += new System.EventHandler(this.pbxBoeingp8_Click);
+            // 
+            // pbxDessault
+            // 
+            this.pbxDessault.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pbxDessault.Location = new System.Drawing.Point(143, 3);
+            this.pbxDessault.Name = "pbxDessault";
+            this.pbxDessault.Size = new System.Drawing.Size(64, 64);
+            this.pbxDessault.TabIndex = 90;
+            this.pbxDessault.TabStop = false;
+            this.pbxDessault.Click += new System.EventHandler(this.pbxDessault_Click);
+            // 
+            // pbxBoeinEa
+            // 
+            this.pbxBoeinEa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pbxBoeinEa.Location = new System.Drawing.Point(213, 3);
+            this.pbxBoeinEa.Name = "pbxBoeinEa";
+            this.pbxBoeinEa.Size = new System.Drawing.Size(64, 64);
+            this.pbxBoeinEa.TabIndex = 91;
+            this.pbxBoeinEa.TabStop = false;
+            this.pbxBoeinEa.Click += new System.EventHandler(this.pbxBoeinEa_Click);
+            // 
+            // imglPlanes
+            // 
+            this.imglPlanes.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglPlanes.ImageStream")));
+            this.imglPlanes.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglPlanes.Images.SetKeyName(0, "boeing-p-8-poseidon.png");
+            this.imglPlanes.Images.SetKeyName(1, "boeng-ea-18g-growler.png");
+            this.imglPlanes.Images.SetKeyName(2, "dessault-rafale.png");
+            this.imglPlanes.Images.SetKeyName(3, "lockheed-martin-f-22a-raptor.png");
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 637);
+            this.Controls.Add(this.lblSelect);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.flpnlCanvas);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.flpnlObjects);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "frmMain";
             this.Text = "Simulation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
@@ -1456,6 +1555,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx86)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx87)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx88)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLockheed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBoeingp8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDessault)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBoeinEa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1571,6 +1675,14 @@
         private System.Windows.Forms.PictureBox pbxCafeteria;
         private System.Windows.Forms.PictureBox pbxBuilding;
         private System.Windows.Forms.ImageList imglObjects;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSelect;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox pbxLockheed;
+        private System.Windows.Forms.PictureBox pbxBoeingp8;
+        private System.Windows.Forms.PictureBox pbxDessault;
+        private System.Windows.Forms.PictureBox pbxBoeinEa;
+        private System.Windows.Forms.ImageList imglPlanes;
     }
 }
 

@@ -18,6 +18,25 @@ namespace Program
         public frmMain()
         {
             InitializeComponent();
+
+            //Getting the Coordinates of the cursor on the panel
+            pnlCanvas = new Panel();
+            pnlCanvas.Location = new System.Drawing.Point(82, 132);
+            pnlCanvas.Size = new System.Drawing.Size(200, 100);
+            pnlCanvas.Click += new System.EventHandler(this.pnlCanvas_Click);
+            this.Controls.Add(this.pnlCanvas);
+
+            //Drag and drop code
+            pnlCanvas.AllowDrop = true;
+            flpnlObjects.AllowDrop = true;
+
+            pnlCanvas.DragEnter += panel_DragEnter;
+            flpnlObjects.DragEnter += panel_DragEnter;
+
+            pnlCanvas.DragDrop += panel_DragDrop;
+            flpnlObjects.DragDrop += panel_DragDrop;
+
+            button1.MouseDown += button1_MouseDown;
         }
         // ##############################################
         // GLOBAL VARIABLES

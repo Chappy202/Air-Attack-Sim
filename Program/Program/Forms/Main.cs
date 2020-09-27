@@ -25,6 +25,7 @@ namespace Program
         public string selectedPlane = "None";
         public string[] planes = new string[]{ "pbxLockheed", "pbxBoeingp8", "pbxDessault", "pbxBoeinEa" };
         // Some useless code
+        public int dumdumb;
 
         // ##############################################
         // BUTTONS

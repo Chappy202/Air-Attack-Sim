@@ -80,26 +80,22 @@ namespace Program
 
         public void movePlane()
         {
-            bool Edge = false;
-            while (!stop)
-            {
-                for (int i = 0; i < 50; i++)
-                {
-                    int X = pbxPlane.Location.X - 5;
-                    int Y = pbxPlane.Location.Y;
-                    if (pbxPlane.InvokeRequired)
-                    {
-                        MethodInvoker AssignnMethodToControl = new MethodInvoker(movePlane);
-                        pbxPlane.Invoke(AssignnMethodToControl);
-                    }
-                    else
-                    {
-                        pbxPlane.Location = new Point(X, Y);
-                    }
-                    Thread.Sleep(50);
-                }
-            }
+            
         }
-        
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            pbxStart.Image = imglObjects.Images[10];
+            pbxEnd.Image = imglObjects.Images[4];
+            pbxAA.Image = imglObjects.Images[0];
+            pbxArtilary.Image = imglObjects.Images[1];
+            pbxBuilding.Image = imglObjects.Images[2];
+            pbxCafeteria.Image = imglObjects.Images[3];
+            pbxHangar.Image = imglObjects.Images[5];
+            pbxHQ.Image = imglObjects.Images[6];
+            pbxMed.Image = imglObjects.Images[7];
+            pbxRadar.Image = imglObjects.Images[9];
+            pbxTent.Image = imglObjects.Images[11];
+        }
     }
 }

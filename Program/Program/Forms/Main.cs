@@ -24,6 +24,7 @@ namespace Program
         // ##############################################
         public string selectedPlane = "None";
         public string[] planes = new string[]{ "pbxLockheed", "pbxBoeingp8", "pbxDessault", "pbxBoeinEa" };
+
         // Some useless code
         public int imageSet;
 
@@ -65,14 +66,14 @@ namespace Program
             }
 
             pbx1.Image = imglObjects.Images[3];
-            if (pbx1.Image == imglObjects.Images[3])
+            pbx1.Tag = imglObjects.Images.Keys[3];
+            foreach (var item in imglObjects.Images.Keys)
             {
-                MessageBox.Show("Match!");
-            }
-            else
-            {
-                MessageBox.Show("No match!");
-                //MessageBox.Show((pbx1.Image.);
+                if (pbx1.Tag.ToString() == item)
+                {
+                    MessageBox.Show("Match!");
+                    MessageBox.Show(pbx1.Tag.ToString());
+                }
             }
         }
 
@@ -214,12 +215,9 @@ namespace Program
 
         }
 
-        private void pbx1_Click(object sender, EventArgs e)
-        {
-            pbx1.Image = imglObjects.Images[imageSet];
-        }
-
-        //Objects set
+        // ##############################################
+        // OBJECT SELECT
+        // ##############################################
         private void pbxStart_Click(object sender, EventArgs e)
         {
             imageSet = 10;
@@ -274,6 +272,21 @@ namespace Program
         private void pbxBuilding_Click(object sender, EventArgs e)
         {
             imageSet = 2;
+        }
+
+        // ##############################################
+        // CANVAS ASSIGN
+        // ##############################################
+
+        private void pbx1_Click(object sender, EventArgs e)
+        {
+            pbx1.Image = imglObjects.Images[imageSet];
+            pbx1.Tag = imglObjects.Images.Keys[imageSet];
+        }
+        private void pbx2_Click(object sender, EventArgs e)
+        {
+            pbx2.Image = imglObjects.Images[imageSet];
+            pbx2.Tag = imglObjects.Images.Keys[imageSet];
         }
     }
 }

@@ -575,6 +575,7 @@
             this.pbx2.Size = new System.Drawing.Size(64, 64);
             this.pbx2.TabIndex = 1;
             this.pbx2.TabStop = false;
+            this.pbx2.Click += new System.EventHandler(this.pbx2_Click);
             // 
             // pbx3
             // 

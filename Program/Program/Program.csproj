@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Coords.cs" />
     <Compile Include="Classes\DatabaseHandler.cs" />
     <Compile Include="Classes\DataHandler.cs" />
     <Compile Include="Classes\EventHandler.cs" />

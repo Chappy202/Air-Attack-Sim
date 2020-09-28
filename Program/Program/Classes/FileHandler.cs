@@ -12,5 +12,10 @@ namespace Program.Classes
         {
             // Initialization code goes here
         }
+
+        internal object printMap(double v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

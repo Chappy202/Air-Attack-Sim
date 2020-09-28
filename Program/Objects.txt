@@ -1,0 +1,12 @@
+0 - AA.png
+1 - artilary.png
+2 - building.png
+3 - cafeteria.png
+4 - finish.png
+5 - hangar.png
+6 - HQ.png
+7 - Med.png
+8 - plane.png
+9 - radar.png
+10 - start.png
+11 - tent.png

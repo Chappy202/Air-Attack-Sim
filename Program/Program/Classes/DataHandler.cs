@@ -9,6 +9,7 @@ namespace Program.Classes
 {
     class DataHandler
     {
+        public static List<Point> shortestPath;
         public DataHandler()
         {
             // Initialization code goes here

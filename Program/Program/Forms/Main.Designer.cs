@@ -285,6 +285,7 @@
             this.pbxStart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxStart.TabIndex = 88;
             this.pbxStart.TabStop = false;
+            this.pbxStart.Click += new System.EventHandler(this.pbxStart_Click);
             // 
             // pbxEnd
             // 
@@ -294,6 +295,7 @@
             this.pbxEnd.Size = new System.Drawing.Size(64, 64);
             this.pbxEnd.TabIndex = 89;
             this.pbxEnd.TabStop = false;
+            this.pbxEnd.Click += new System.EventHandler(this.pbxEnd_Click);
             // 
             // pbxAA
             // 
@@ -303,6 +305,7 @@
             this.pbxAA.Size = new System.Drawing.Size(64, 64);
             this.pbxAA.TabIndex = 90;
             this.pbxAA.TabStop = false;
+            this.pbxAA.Click += new System.EventHandler(this.pbxAA_Click);
             // 
             // pbxHQ
             // 
@@ -312,6 +315,7 @@
             this.pbxHQ.Size = new System.Drawing.Size(64, 64);
             this.pbxHQ.TabIndex = 91;
             this.pbxHQ.TabStop = false;
+            this.pbxHQ.Click += new System.EventHandler(this.pbxHQ_Click);
             // 
             // pbxMed
             // 
@@ -321,6 +325,7 @@
             this.pbxMed.Size = new System.Drawing.Size(64, 64);
             this.pbxMed.TabIndex = 92;
             this.pbxMed.TabStop = false;
+            this.pbxMed.Click += new System.EventHandler(this.pbxMed_Click);
             // 
             // pbxHangar
             // 
@@ -330,6 +335,7 @@
             this.pbxHangar.Size = new System.Drawing.Size(64, 64);
             this.pbxHangar.TabIndex = 93;
             this.pbxHangar.TabStop = false;
+            this.pbxHangar.Click += new System.EventHandler(this.pbxHangar_Click);
             // 
             // pbxArtilary
             // 
@@ -339,6 +345,7 @@
             this.pbxArtilary.Size = new System.Drawing.Size(64, 64);
             this.pbxArtilary.TabIndex = 94;
             this.pbxArtilary.TabStop = false;
+            this.pbxArtilary.Click += new System.EventHandler(this.pbxArtilary_Click);
             // 
             // pbxTent
             // 
@@ -348,6 +355,7 @@
             this.pbxTent.Size = new System.Drawing.Size(64, 64);
             this.pbxTent.TabIndex = 95;
             this.pbxTent.TabStop = false;
+            this.pbxTent.Click += new System.EventHandler(this.pbxTent_Click);
             // 
             // pbxRadar
             // 
@@ -357,6 +365,7 @@
             this.pbxRadar.Size = new System.Drawing.Size(64, 64);
             this.pbxRadar.TabIndex = 97;
             this.pbxRadar.TabStop = false;
+            this.pbxRadar.Click += new System.EventHandler(this.pbxRadar_Click);
             // 
             // pbxCafeteria
             // 
@@ -366,6 +375,7 @@
             this.pbxCafeteria.Size = new System.Drawing.Size(64, 64);
             this.pbxCafeteria.TabIndex = 98;
             this.pbxCafeteria.TabStop = false;
+            this.pbxCafeteria.Click += new System.EventHandler(this.pbxCafeteria_Click);
             // 
             // pbxBuilding
             // 
@@ -375,6 +385,7 @@
             this.pbxBuilding.Size = new System.Drawing.Size(64, 64);
             this.pbxBuilding.TabIndex = 99;
             this.pbxBuilding.TabStop = false;
+            this.pbxBuilding.Click += new System.EventHandler(this.pbxBuilding_Click);
             // 
             // pnlHeader
             // 
@@ -554,6 +565,7 @@
             this.pbx1.Size = new System.Drawing.Size(64, 64);
             this.pbx1.TabIndex = 0;
             this.pbx1.TabStop = false;
+            this.pbx1.Click += new System.EventHandler(this.pbx1_Click);
             // 
             // pbx2
             // 

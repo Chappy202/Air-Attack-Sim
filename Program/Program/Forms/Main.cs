@@ -52,9 +52,19 @@ namespace Program
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Thread planeThread = new Thread(new ThreadStart(movePlane));
-            planeThread.Start();
-
+            //Thread planeThread = new Thread(new ThreadStart(movePlane));
+            //planeThread.Start();
+            pbx1.Image = imglObjects.Images[3];
+            if (pbx1.Image == imglObjects.Images[3])
+            {
+                MessageBox.Show("Match!");
+            }
+            else
+            {
+                MessageBox.Show("No match!");
+                //MessageBox.Show((pbx1.Image.);
+            }
+            
         }
 
         private void btnStop_Click(object sender, EventArgs e)

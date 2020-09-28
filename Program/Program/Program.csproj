@@ -51,6 +51,9 @@
     <Compile Include="Classes\DataHandler.cs" />
     <Compile Include="Classes\EventHandler.cs" />
     <Compile Include="Classes\FileHandler.cs" />
+    <Compile Include="Classes\GenerateMap.cs" />
+    <Compile Include="Classes\PathFinding.cs" />
+    <Compile Include="Classes\Point.cs" />
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>

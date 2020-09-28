@@ -214,6 +214,101 @@ namespace Program
             pbxBoeinEa.Image = imglPlanes.Images[1];
 
         }
+        // ##############################################
+        // OBJECT TOOLTIPS
+        // ##############################################
+        private void pbxStart_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxStart, "Start");
+        }
+
+        private void pbxEnd_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxEnd, "End");
+        }
+
+        private void pbxAA_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxAA, "Anti-Air");
+        }
+
+        private void pbxHQ_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxHQ, "Headquarters");
+        }
+
+        private void pbxMed_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxMed, "Medical Bay");
+        }
+
+        private void pbxHangar_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxHangar, "Hangar");
+        }
+
+        private void pbxArtilary_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxArtilary, "Artillery");
+        }
+
+        private void pbxTent_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxTent, "Tent");
+        }
+
+        private void pbxRadar_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxRadar, "Radar");
+        }
+
+        private void pbxCafeteria_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxCafeteria, "Cafeteria");
+        }
+
+        private void pbxBuilding_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxBuilding, "Building");
+        }
+
+        // ##############################################
+        // PLANE TOOLTIPS
+        // ##############################################
+        private void pbxLockheed_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxLockheed, "Lockheed");
+        }
+
+        private void pbxBoeingp8_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxBoeingp8, "Boeing P 8");
+        }
+
+        private void pbxDessault_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxDessault, "Dessault");
+        }
+
+        private void pbxBoeinEa_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.pbxBoeinEa, "Boeing EA");
+        }
 
         // ##############################################
         // OBJECT SELECT

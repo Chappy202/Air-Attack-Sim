@@ -597,6 +597,7 @@
             this.pbx3.Size = new System.Drawing.Size(64, 64);
             this.pbx3.TabIndex = 2;
             this.pbx3.TabStop = false;
+            this.pbx3.Click += new System.EventHandler(this.pbx3_Click);
             // 
             // pbx4
             // 
@@ -606,6 +607,7 @@
             this.pbx4.Size = new System.Drawing.Size(64, 64);
             this.pbx4.TabIndex = 3;
             this.pbx4.TabStop = false;
+            this.pbx4.Click += new System.EventHandler(this.pbx4_Click);
             // 
             // pbx5
             // 
@@ -615,6 +617,7 @@
             this.pbx5.Size = new System.Drawing.Size(64, 64);
             this.pbx5.TabIndex = 4;
             this.pbx5.TabStop = false;
+            this.pbx5.Click += new System.EventHandler(this.pbx5_Click);
             // 
             // pbx6
             // 
@@ -624,6 +627,7 @@
             this.pbx6.Size = new System.Drawing.Size(64, 64);
             this.pbx6.TabIndex = 5;
             this.pbx6.TabStop = false;
+            this.pbx6.Click += new System.EventHandler(this.pbx6_Click);
             // 
             // pbx7
             // 
@@ -633,6 +637,7 @@
             this.pbx7.Size = new System.Drawing.Size(64, 64);
             this.pbx7.TabIndex = 6;
             this.pbx7.TabStop = false;
+            this.pbx7.Click += new System.EventHandler(this.pbx7_Click);
             // 
             // pbx8
             // 
@@ -642,6 +647,7 @@
             this.pbx8.Size = new System.Drawing.Size(64, 64);
             this.pbx8.TabIndex = 7;
             this.pbx8.TabStop = false;
+            this.pbx8.Click += new System.EventHandler(this.pbx8_Click);
             // 
             // pbx9
             // 
@@ -651,6 +657,7 @@
             this.pbx9.Size = new System.Drawing.Size(64, 64);
             this.pbx9.TabIndex = 8;
             this.pbx9.TabStop = false;
+            this.pbx9.Click += new System.EventHandler(this.pbx9_Click);
             // 
             // pbx10
             // 
@@ -660,6 +667,7 @@
             this.pbx10.Size = new System.Drawing.Size(64, 64);
             this.pbx10.TabIndex = 9;
             this.pbx10.TabStop = false;
+            this.pbx10.Click += new System.EventHandler(this.pbx10_Click);
             // 
             // pbx11
             // 
@@ -669,6 +677,7 @@
             this.pbx11.Size = new System.Drawing.Size(64, 64);
             this.pbx11.TabIndex = 10;
             this.pbx11.TabStop = false;
+            this.pbx11.Click += new System.EventHandler(this.pbx11_Click);
             // 
             // pbx12
             // 
@@ -678,6 +687,7 @@
             this.pbx12.Size = new System.Drawing.Size(64, 64);
             this.pbx12.TabIndex = 11;
             this.pbx12.TabStop = false;
+            this.pbx12.Click += new System.EventHandler(this.pbx12_Click);
             // 
             // pbx13
             // 
@@ -687,6 +697,7 @@
             this.pbx13.Size = new System.Drawing.Size(64, 64);
             this.pbx13.TabIndex = 12;
             this.pbx13.TabStop = false;
+            this.pbx13.Click += new System.EventHandler(this.pbx13_Click);
             // 
             // pbx14
             // 
@@ -696,6 +707,7 @@
             this.pbx14.Size = new System.Drawing.Size(64, 64);
             this.pbx14.TabIndex = 13;
             this.pbx14.TabStop = false;
+            this.pbx14.Click += new System.EventHandler(this.pbx14_Click);
             // 
             // pbx15
             // 
@@ -705,6 +717,7 @@
             this.pbx15.Size = new System.Drawing.Size(64, 64);
             this.pbx15.TabIndex = 14;
             this.pbx15.TabStop = false;
+            this.pbx15.Click += new System.EventHandler(this.pbx15_Click);
             // 
             // pbx16
             // 
@@ -714,6 +727,7 @@
             this.pbx16.Size = new System.Drawing.Size(64, 64);
             this.pbx16.TabIndex = 15;
             this.pbx16.TabStop = false;
+            this.pbx16.Click += new System.EventHandler(this.pbx16_Click);
             // 
             // pbx17
             // 
@@ -723,6 +737,7 @@
             this.pbx17.Size = new System.Drawing.Size(64, 64);
             this.pbx17.TabIndex = 16;
             this.pbx17.TabStop = false;
+            this.pbx17.Click += new System.EventHandler(this.pbx17_Click);
             // 
             // pbx18
             // 
@@ -732,6 +747,7 @@
             this.pbx18.Size = new System.Drawing.Size(64, 64);
             this.pbx18.TabIndex = 17;
             this.pbx18.TabStop = false;
+            this.pbx18.Click += new System.EventHandler(this.pbx18_Click);
             // 
             // pbx19
             // 
@@ -741,6 +757,7 @@
             this.pbx19.Size = new System.Drawing.Size(64, 64);
             this.pbx19.TabIndex = 18;
             this.pbx19.TabStop = false;
+            this.pbx19.Click += new System.EventHandler(this.pbx19_Click);
             // 
             // pbx20
             // 
@@ -750,6 +767,7 @@
             this.pbx20.Size = new System.Drawing.Size(64, 64);
             this.pbx20.TabIndex = 19;
             this.pbx20.TabStop = false;
+            this.pbx20.Click += new System.EventHandler(this.pbx20_Click);
             // 
             // pbx21
             // 
@@ -759,6 +777,7 @@
             this.pbx21.Size = new System.Drawing.Size(64, 64);
             this.pbx21.TabIndex = 20;
             this.pbx21.TabStop = false;
+            this.pbx21.Click += new System.EventHandler(this.pbx21_Click);
             // 
             // pbx22
             // 
@@ -768,6 +787,7 @@
             this.pbx22.Size = new System.Drawing.Size(64, 64);
             this.pbx22.TabIndex = 21;
             this.pbx22.TabStop = false;
+            this.pbx22.Click += new System.EventHandler(this.pbx22_Click);
             // 
             // pbx23
             // 
@@ -777,6 +797,7 @@
             this.pbx23.Size = new System.Drawing.Size(64, 64);
             this.pbx23.TabIndex = 22;
             this.pbx23.TabStop = false;
+            this.pbx23.Click += new System.EventHandler(this.pbx23_Click);
             // 
             // pbx24
             // 
@@ -786,6 +807,7 @@
             this.pbx24.Size = new System.Drawing.Size(64, 64);
             this.pbx24.TabIndex = 23;
             this.pbx24.TabStop = false;
+            this.pbx24.Click += new System.EventHandler(this.pbx24_Click);
             // 
             // pbx25
             // 
@@ -795,6 +817,7 @@
             this.pbx25.Size = new System.Drawing.Size(64, 64);
             this.pbx25.TabIndex = 24;
             this.pbx25.TabStop = false;
+            this.pbx25.Click += new System.EventHandler(this.pbx25_Click);
             // 
             // pbx26
             // 
@@ -804,6 +827,7 @@
             this.pbx26.Size = new System.Drawing.Size(64, 64);
             this.pbx26.TabIndex = 25;
             this.pbx26.TabStop = false;
+            this.pbx26.Click += new System.EventHandler(this.pbx26_Click);
             // 
             // pbx27
             // 
@@ -813,6 +837,7 @@
             this.pbx27.Size = new System.Drawing.Size(64, 64);
             this.pbx27.TabIndex = 26;
             this.pbx27.TabStop = false;
+            this.pbx27.Click += new System.EventHandler(this.pbx27_Click);
             // 
             // pbx28
             // 
@@ -822,6 +847,7 @@
             this.pbx28.Size = new System.Drawing.Size(64, 64);
             this.pbx28.TabIndex = 27;
             this.pbx28.TabStop = false;
+            this.pbx28.Click += new System.EventHandler(this.pbx28_Click);
             // 
             // pbx29
             // 
@@ -831,6 +857,7 @@
             this.pbx29.Size = new System.Drawing.Size(64, 64);
             this.pbx29.TabIndex = 28;
             this.pbx29.TabStop = false;
+            this.pbx29.Click += new System.EventHandler(this.pbx29_Click);
             // 
             // pbx30
             // 
@@ -840,6 +867,7 @@
             this.pbx30.Size = new System.Drawing.Size(64, 64);
             this.pbx30.TabIndex = 29;
             this.pbx30.TabStop = false;
+            this.pbx30.Click += new System.EventHandler(this.pbx30_Click);
             // 
             // pbx31
             // 
@@ -849,6 +877,7 @@
             this.pbx31.Size = new System.Drawing.Size(64, 64);
             this.pbx31.TabIndex = 30;
             this.pbx31.TabStop = false;
+            this.pbx31.Click += new System.EventHandler(this.pbx31_Click);
             // 
             // pbx32
             // 
@@ -858,6 +887,7 @@
             this.pbx32.Size = new System.Drawing.Size(64, 64);
             this.pbx32.TabIndex = 31;
             this.pbx32.TabStop = false;
+            this.pbx32.Click += new System.EventHandler(this.pbx32_Click);
             // 
             // pbx33
             // 
@@ -867,6 +897,7 @@
             this.pbx33.Size = new System.Drawing.Size(64, 64);
             this.pbx33.TabIndex = 32;
             this.pbx33.TabStop = false;
+            this.pbx33.Click += new System.EventHandler(this.pbx33_Click);
             // 
             // pbx34
             // 
@@ -876,6 +907,7 @@
             this.pbx34.Size = new System.Drawing.Size(64, 64);
             this.pbx34.TabIndex = 33;
             this.pbx34.TabStop = false;
+            this.pbx34.Click += new System.EventHandler(this.pbx34_Click);
             // 
             // pbx35
             // 
@@ -885,6 +917,7 @@
             this.pbx35.Size = new System.Drawing.Size(64, 64);
             this.pbx35.TabIndex = 34;
             this.pbx35.TabStop = false;
+            this.pbx35.Click += new System.EventHandler(this.pbx35_Click);
             // 
             // pbx36
             // 
@@ -894,6 +927,7 @@
             this.pbx36.Size = new System.Drawing.Size(64, 64);
             this.pbx36.TabIndex = 35;
             this.pbx36.TabStop = false;
+            this.pbx36.Click += new System.EventHandler(this.pbx36_Click);
             // 
             // pbx37
             // 
@@ -903,6 +937,7 @@
             this.pbx37.Size = new System.Drawing.Size(64, 64);
             this.pbx37.TabIndex = 36;
             this.pbx37.TabStop = false;
+            this.pbx37.Click += new System.EventHandler(this.pbx37_Click);
             // 
             // pbx38
             // 
@@ -912,6 +947,7 @@
             this.pbx38.Size = new System.Drawing.Size(64, 64);
             this.pbx38.TabIndex = 37;
             this.pbx38.TabStop = false;
+            this.pbx38.Click += new System.EventHandler(this.pbx38_Click);
             // 
             // pbx39
             // 
@@ -921,6 +957,7 @@
             this.pbx39.Size = new System.Drawing.Size(64, 64);
             this.pbx39.TabIndex = 38;
             this.pbx39.TabStop = false;
+            this.pbx39.Click += new System.EventHandler(this.pbx39_Click);
             // 
             // pbx40
             // 
@@ -930,6 +967,7 @@
             this.pbx40.Size = new System.Drawing.Size(64, 64);
             this.pbx40.TabIndex = 39;
             this.pbx40.TabStop = false;
+            this.pbx40.Click += new System.EventHandler(this.pbx40_Click);
             // 
             // pbx41
             // 
@@ -939,6 +977,7 @@
             this.pbx41.Size = new System.Drawing.Size(64, 64);
             this.pbx41.TabIndex = 40;
             this.pbx41.TabStop = false;
+            this.pbx41.Click += new System.EventHandler(this.pbx41_Click);
             // 
             // pbx42
             // 
@@ -948,6 +987,7 @@
             this.pbx42.Size = new System.Drawing.Size(64, 64);
             this.pbx42.TabIndex = 41;
             this.pbx42.TabStop = false;
+            this.pbx42.Click += new System.EventHandler(this.pbx42_Click);
             // 
             // pbx43
             // 
@@ -957,6 +997,7 @@
             this.pbx43.Size = new System.Drawing.Size(64, 64);
             this.pbx43.TabIndex = 42;
             this.pbx43.TabStop = false;
+            this.pbx43.Click += new System.EventHandler(this.pbx43_Click);
             // 
             // pbx44
             // 
@@ -966,6 +1007,7 @@
             this.pbx44.Size = new System.Drawing.Size(64, 64);
             this.pbx44.TabIndex = 43;
             this.pbx44.TabStop = false;
+            this.pbx44.Click += new System.EventHandler(this.pbx44_Click);
             // 
             // pbx45
             // 
@@ -975,6 +1017,7 @@
             this.pbx45.Size = new System.Drawing.Size(64, 64);
             this.pbx45.TabIndex = 44;
             this.pbx45.TabStop = false;
+            this.pbx45.Click += new System.EventHandler(this.pbx45_Click);
             // 
             // pbx46
             // 
@@ -984,6 +1027,7 @@
             this.pbx46.Size = new System.Drawing.Size(64, 64);
             this.pbx46.TabIndex = 45;
             this.pbx46.TabStop = false;
+            this.pbx46.Click += new System.EventHandler(this.pbx46_Click);
             // 
             // pbx47
             // 
@@ -993,6 +1037,7 @@
             this.pbx47.Size = new System.Drawing.Size(64, 64);
             this.pbx47.TabIndex = 46;
             this.pbx47.TabStop = false;
+            this.pbx47.Click += new System.EventHandler(this.pbx47_Click);
             // 
             // pbx48
             // 
@@ -1002,6 +1047,7 @@
             this.pbx48.Size = new System.Drawing.Size(64, 64);
             this.pbx48.TabIndex = 47;
             this.pbx48.TabStop = false;
+            this.pbx48.Click += new System.EventHandler(this.pbx48_Click);
             // 
             // pbx49
             // 
@@ -1011,6 +1057,7 @@
             this.pbx49.Size = new System.Drawing.Size(64, 64);
             this.pbx49.TabIndex = 48;
             this.pbx49.TabStop = false;
+            this.pbx49.Click += new System.EventHandler(this.pbx49_Click);
             // 
             // pbx50
             // 
@@ -1020,6 +1067,7 @@
             this.pbx50.Size = new System.Drawing.Size(64, 64);
             this.pbx50.TabIndex = 49;
             this.pbx50.TabStop = false;
+            this.pbx50.Click += new System.EventHandler(this.pbx50_Click);
             // 
             // pbx51
             // 
@@ -1029,6 +1077,7 @@
             this.pbx51.Size = new System.Drawing.Size(64, 64);
             this.pbx51.TabIndex = 50;
             this.pbx51.TabStop = false;
+            this.pbx51.Click += new System.EventHandler(this.pbx51_Click);
             // 
             // pbx52
             // 
@@ -1038,6 +1087,7 @@
             this.pbx52.Size = new System.Drawing.Size(64, 64);
             this.pbx52.TabIndex = 51;
             this.pbx52.TabStop = false;
+            this.pbx52.Click += new System.EventHandler(this.pbx52_Click);
             // 
             // pbx53
             // 
@@ -1047,6 +1097,7 @@
             this.pbx53.Size = new System.Drawing.Size(64, 64);
             this.pbx53.TabIndex = 52;
             this.pbx53.TabStop = false;
+            this.pbx53.Click += new System.EventHandler(this.pbx53_Click);
             // 
             // pbx54
             // 
@@ -1056,6 +1107,7 @@
             this.pbx54.Size = new System.Drawing.Size(64, 64);
             this.pbx54.TabIndex = 53;
             this.pbx54.TabStop = false;
+            this.pbx54.Click += new System.EventHandler(this.pbx54_Click);
             // 
             // pbx55
             // 
@@ -1065,6 +1117,7 @@
             this.pbx55.Size = new System.Drawing.Size(64, 64);
             this.pbx55.TabIndex = 54;
             this.pbx55.TabStop = false;
+            this.pbx55.Click += new System.EventHandler(this.pbx55_Click);
             // 
             // pbx56
             // 
@@ -1074,6 +1127,7 @@
             this.pbx56.Size = new System.Drawing.Size(64, 64);
             this.pbx56.TabIndex = 55;
             this.pbx56.TabStop = false;
+            this.pbx56.Click += new System.EventHandler(this.pbx56_Click);
             // 
             // pbx57
             // 
@@ -1083,6 +1137,7 @@
             this.pbx57.Size = new System.Drawing.Size(64, 64);
             this.pbx57.TabIndex = 56;
             this.pbx57.TabStop = false;
+            this.pbx57.Click += new System.EventHandler(this.pbx57_Click);
             // 
             // pbx58
             // 
@@ -1092,6 +1147,7 @@
             this.pbx58.Size = new System.Drawing.Size(64, 64);
             this.pbx58.TabIndex = 57;
             this.pbx58.TabStop = false;
+            this.pbx58.Click += new System.EventHandler(this.pbx58_Click);
             // 
             // pbx59
             // 
@@ -1101,6 +1157,7 @@
             this.pbx59.Size = new System.Drawing.Size(64, 64);
             this.pbx59.TabIndex = 58;
             this.pbx59.TabStop = false;
+            this.pbx59.Click += new System.EventHandler(this.pbx59_Click);
             // 
             // pbx60
             // 
@@ -1110,6 +1167,7 @@
             this.pbx60.Size = new System.Drawing.Size(64, 64);
             this.pbx60.TabIndex = 59;
             this.pbx60.TabStop = false;
+            this.pbx60.Click += new System.EventHandler(this.pbx60_Click);
             // 
             // pbx61
             // 
@@ -1119,6 +1177,7 @@
             this.pbx61.Size = new System.Drawing.Size(64, 64);
             this.pbx61.TabIndex = 60;
             this.pbx61.TabStop = false;
+            this.pbx61.Click += new System.EventHandler(this.pbx61_Click);
             // 
             // pbx62
             // 
@@ -1128,6 +1187,7 @@
             this.pbx62.Size = new System.Drawing.Size(64, 64);
             this.pbx62.TabIndex = 61;
             this.pbx62.TabStop = false;
+            this.pbx62.Click += new System.EventHandler(this.pbx62_Click);
             // 
             // pbx63
             // 
@@ -1137,6 +1197,7 @@
             this.pbx63.Size = new System.Drawing.Size(64, 64);
             this.pbx63.TabIndex = 62;
             this.pbx63.TabStop = false;
+            this.pbx63.Click += new System.EventHandler(this.pbx63_Click);
             // 
             // pbx64
             // 
@@ -1146,6 +1207,7 @@
             this.pbx64.Size = new System.Drawing.Size(64, 64);
             this.pbx64.TabIndex = 63;
             this.pbx64.TabStop = false;
+            this.pbx64.Click += new System.EventHandler(this.pbx64_Click);
             // 
             // pbx65
             // 
@@ -1155,6 +1217,7 @@
             this.pbx65.Size = new System.Drawing.Size(64, 64);
             this.pbx65.TabIndex = 64;
             this.pbx65.TabStop = false;
+            this.pbx65.Click += new System.EventHandler(this.pbx65_Click);
             // 
             // pbx66
             // 
@@ -1164,6 +1227,7 @@
             this.pbx66.Size = new System.Drawing.Size(64, 64);
             this.pbx66.TabIndex = 65;
             this.pbx66.TabStop = false;
+            this.pbx66.Click += new System.EventHandler(this.pbx66_Click);
             // 
             // pbx67
             // 
@@ -1173,6 +1237,7 @@
             this.pbx67.Size = new System.Drawing.Size(64, 64);
             this.pbx67.TabIndex = 66;
             this.pbx67.TabStop = false;
+            this.pbx67.Click += new System.EventHandler(this.pbx67_Click);
             // 
             // pbx68
             // 
@@ -1182,6 +1247,7 @@
             this.pbx68.Size = new System.Drawing.Size(64, 64);
             this.pbx68.TabIndex = 67;
             this.pbx68.TabStop = false;
+            this.pbx68.Click += new System.EventHandler(this.pbx68_Click);
             // 
             // pbx69
             // 
@@ -1191,6 +1257,7 @@
             this.pbx69.Size = new System.Drawing.Size(64, 64);
             this.pbx69.TabIndex = 68;
             this.pbx69.TabStop = false;
+            this.pbx69.Click += new System.EventHandler(this.pbx69_Click);
             // 
             // pbx70
             // 
@@ -1200,6 +1267,7 @@
             this.pbx70.Size = new System.Drawing.Size(64, 64);
             this.pbx70.TabIndex = 69;
             this.pbx70.TabStop = false;
+            this.pbx70.Click += new System.EventHandler(this.pbx70_Click);
             // 
             // pbx71
             // 
@@ -1209,6 +1277,7 @@
             this.pbx71.Size = new System.Drawing.Size(64, 64);
             this.pbx71.TabIndex = 70;
             this.pbx71.TabStop = false;
+            this.pbx71.Click += new System.EventHandler(this.pbx71_Click);
             // 
             // pbx72
             // 
@@ -1218,6 +1287,7 @@
             this.pbx72.Size = new System.Drawing.Size(64, 64);
             this.pbx72.TabIndex = 71;
             this.pbx72.TabStop = false;
+            this.pbx72.Click += new System.EventHandler(this.pbx72_Click);
             // 
             // pbx73
             // 
@@ -1227,6 +1297,7 @@
             this.pbx73.Size = new System.Drawing.Size(64, 64);
             this.pbx73.TabIndex = 72;
             this.pbx73.TabStop = false;
+            this.pbx73.Click += new System.EventHandler(this.pbx73_Click);
             // 
             // pbx74
             // 
@@ -1236,6 +1307,7 @@
             this.pbx74.Size = new System.Drawing.Size(64, 64);
             this.pbx74.TabIndex = 73;
             this.pbx74.TabStop = false;
+            this.pbx74.Click += new System.EventHandler(this.pbx74_Click);
             // 
             // pbx75
             // 
@@ -1245,6 +1317,7 @@
             this.pbx75.Size = new System.Drawing.Size(64, 64);
             this.pbx75.TabIndex = 74;
             this.pbx75.TabStop = false;
+            this.pbx75.Click += new System.EventHandler(this.pbx75_Click);
             // 
             // pbx76
             // 
@@ -1254,6 +1327,7 @@
             this.pbx76.Size = new System.Drawing.Size(64, 64);
             this.pbx76.TabIndex = 75;
             this.pbx76.TabStop = false;
+            this.pbx76.Click += new System.EventHandler(this.pbx76_Click);
             // 
             // pbx77
             // 
@@ -1263,6 +1337,7 @@
             this.pbx77.Size = new System.Drawing.Size(64, 64);
             this.pbx77.TabIndex = 76;
             this.pbx77.TabStop = false;
+            this.pbx77.Click += new System.EventHandler(this.pbx77_Click);
             // 
             // pbx78
             // 
@@ -1272,6 +1347,7 @@
             this.pbx78.Size = new System.Drawing.Size(64, 64);
             this.pbx78.TabIndex = 77;
             this.pbx78.TabStop = false;
+            this.pbx78.Click += new System.EventHandler(this.pbx78_Click);
             // 
             // pbx79
             // 
@@ -1281,6 +1357,7 @@
             this.pbx79.Size = new System.Drawing.Size(64, 64);
             this.pbx79.TabIndex = 78;
             this.pbx79.TabStop = false;
+            this.pbx79.Click += new System.EventHandler(this.pbx79_Click);
             // 
             // pbx80
             // 
@@ -1290,6 +1367,7 @@
             this.pbx80.Size = new System.Drawing.Size(64, 64);
             this.pbx80.TabIndex = 79;
             this.pbx80.TabStop = false;
+            this.pbx80.Click += new System.EventHandler(this.pbx80_Click);
             // 
             // pbx81
             // 
@@ -1299,6 +1377,7 @@
             this.pbx81.Size = new System.Drawing.Size(64, 64);
             this.pbx81.TabIndex = 80;
             this.pbx81.TabStop = false;
+            this.pbx81.Click += new System.EventHandler(this.pbx81_Click);
             // 
             // pbx82
             // 
@@ -1308,6 +1387,7 @@
             this.pbx82.Size = new System.Drawing.Size(64, 64);
             this.pbx82.TabIndex = 81;
             this.pbx82.TabStop = false;
+            this.pbx82.Click += new System.EventHandler(this.pbx82_Click);
             // 
             // pbx83
             // 
@@ -1317,6 +1397,7 @@
             this.pbx83.Size = new System.Drawing.Size(64, 64);
             this.pbx83.TabIndex = 82;
             this.pbx83.TabStop = false;
+            this.pbx83.Click += new System.EventHandler(this.pbx83_Click);
             // 
             // pbx84
             // 
@@ -1326,6 +1407,7 @@
             this.pbx84.Size = new System.Drawing.Size(64, 64);
             this.pbx84.TabIndex = 83;
             this.pbx84.TabStop = false;
+            this.pbx84.Click += new System.EventHandler(this.pbx84_Click);
             // 
             // pbx85
             // 
@@ -1335,6 +1417,7 @@
             this.pbx85.Size = new System.Drawing.Size(64, 64);
             this.pbx85.TabIndex = 84;
             this.pbx85.TabStop = false;
+            this.pbx85.Click += new System.EventHandler(this.pbx85_Click);
             // 
             // pbx86
             // 
@@ -1344,6 +1427,7 @@
             this.pbx86.Size = new System.Drawing.Size(64, 64);
             this.pbx86.TabIndex = 85;
             this.pbx86.TabStop = false;
+            this.pbx86.Click += new System.EventHandler(this.pbx86_Click);
             // 
             // pbx87
             // 
@@ -1353,6 +1437,7 @@
             this.pbx87.Size = new System.Drawing.Size(64, 64);
             this.pbx87.TabIndex = 86;
             this.pbx87.TabStop = false;
+            this.pbx87.Click += new System.EventHandler(this.pbx87_Click);
             // 
             // pbx88
             // 
@@ -1362,6 +1447,7 @@
             this.pbx88.Size = new System.Drawing.Size(64, 64);
             this.pbx88.TabIndex = 87;
             this.pbx88.TabStop = false;
+            this.pbx88.Click += new System.EventHandler(this.pbx88_Click);
             // 
             // imglObjects
             // 

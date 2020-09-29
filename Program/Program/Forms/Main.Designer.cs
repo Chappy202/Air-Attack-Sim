@@ -147,6 +147,7 @@
             this.pbxDessault = new System.Windows.Forms.PictureBox();
             this.pbxBoeinEa = new System.Windows.Forms.PictureBox();
             this.imglPlanes = new System.Windows.Forms.ImageList(this.components);
+            this.pbxClear = new System.Windows.Forms.PictureBox();
             this.flpnlObjects.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEnd)).BeginInit();
@@ -254,6 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBoeingp8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessault)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBoeinEa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxClear)).BeginInit();
             this.SuspendLayout();
             // 
             // flpnlObjects
@@ -270,9 +272,10 @@
             this.flpnlObjects.Controls.Add(this.pbxRadar);
             this.flpnlObjects.Controls.Add(this.pbxCafeteria);
             this.flpnlObjects.Controls.Add(this.pbxBuilding);
+            this.flpnlObjects.Controls.Add(this.pbxClear);
             this.flpnlObjects.Location = new System.Drawing.Point(790, 62);
             this.flpnlObjects.Name = "flpnlObjects";
-            this.flpnlObjects.Size = new System.Drawing.Size(285, 233);
+            this.flpnlObjects.Size = new System.Drawing.Size(285, 221);
             this.flpnlObjects.TabIndex = 2;
             this.flpnlObjects.TabStop = true;
             // 
@@ -440,7 +443,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(130, 38);
             this.btnClear.TabIndex = 3;
-            this.btnClear.Text = "Clear Simulation";
+            this.btnClear.Text = "Clear Canvas";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -1465,6 +1468,7 @@
             this.imglObjects.Images.SetKeyName(9, "radar.png");
             this.imglObjects.Images.SetKeyName(10, "start.png");
             this.imglObjects.Images.SetKeyName(11, "tent.png");
+            this.imglObjects.Images.SetKeyName(12, "clear.png");
             // 
             // label1
             // 
@@ -1552,6 +1556,16 @@
             this.imglPlanes.Images.SetKeyName(1, "boeng-ea-18g-growler.png");
             this.imglPlanes.Images.SetKeyName(2, "dessault-rafale.png");
             this.imglPlanes.Images.SetKeyName(3, "lockheed-martin-f-22a-raptor.png");
+            // 
+            // pbxClear
+            // 
+            this.pbxClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pbxClear.Location = new System.Drawing.Point(213, 143);
+            this.pbxClear.Name = "pbxClear";
+            this.pbxClear.Size = new System.Drawing.Size(64, 64);
+            this.pbxClear.TabIndex = 100;
+            this.pbxClear.TabStop = false;
+            this.pbxClear.Click += new System.EventHandler(this.pbxClear_Click);
             // 
             // frmMain
             // 
@@ -1675,6 +1689,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxBoeingp8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDessault)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBoeinEa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxClear)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1798,6 +1813,7 @@
         private System.Windows.Forms.PictureBox pbxDessault;
         private System.Windows.Forms.PictureBox pbxBoeinEa;
         private System.Windows.Forms.ImageList imglPlanes;
+        private System.Windows.Forms.PictureBox pbxClear;
     }
 }
 

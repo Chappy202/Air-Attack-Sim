@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Program.Classes;
 using Program.Forms;
 
 namespace Program
@@ -71,16 +72,11 @@ namespace Program
                 }
             }
 
-            pbx1.Image = imglObjects.Images[3];
-            pbx1.Tag = imglObjects.Images.Keys[3];
-            foreach (var item in imglObjects.Images.Keys)
-            {
-                if (pbx1.Tag.ToString() == item)
-                {
-                    MessageBox.Show("Match!");
-                    MessageBox.Show(pbx1.Tag.ToString());
-                }
-            }
+            Movement anim = new Movement();
+            GenerateMap map = new GenerateMap();
+            map.CreateMap(flpnlCanvas);
+            anim.MovePlane(pbxBoeingp8, flpnlCanvas);
+            anim.Move(pbxBoeingp8, pbxBoeingp8.Location.X, pbxBoeingp8.Location.Y);
         }
 
         private void btnStop_Click(object sender, EventArgs e)

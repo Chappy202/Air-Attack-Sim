@@ -34,7 +34,7 @@ namespace Program.Classes
             foreach (PictureBox item in panel.Controls)
             {
                 arr[col] = 0;
-                if (!(item.Tag.ToString() == null))
+                if (item.Tag != null)
                 {
                     image = item.Tag.ToString();
 

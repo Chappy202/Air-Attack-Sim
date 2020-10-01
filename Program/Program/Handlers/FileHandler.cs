@@ -14,21 +14,15 @@ namespace Program.Classes
             // Initialization code goes here
         }
 
-        public static void printMap(int[,] arr)
+        public void addLog()
         {
-            using (var sw = new StreamWriter("map.txt"))
-            {
-                for (int i = 0; i < 8; i++)
-                {
-                    for (int j = 0; j < 11; j++)
-                    {
-                        sw.Write(arr[i,j]);
-                    }
-                    sw.Write("\n");
-                }
-                sw.Flush();
-                sw.Close();
-            }
+            string filePath =
+                @"D:\Libraries\Google Drive\School\2020 (Second Year)\PRG 282\Assignments\Project\Project\Project\Air-Attack-Sim\Program\sim-log.txt";
+            FileStream stream = new FileStream(filePath, FileMode.Append);
+            StreamWriter writer = new StreamWriter(stream);
+            writer.WriteLineAsync("Sim ran on " + DateTime.Now.ToString());
+            writer.Close();
+            stream.Close();
         }
     }
 }

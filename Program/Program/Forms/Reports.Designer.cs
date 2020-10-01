@@ -89,6 +89,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmReports";
             this.Text = "Reports";
+            this.Load += new System.EventHandler(this.frmReports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOutput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

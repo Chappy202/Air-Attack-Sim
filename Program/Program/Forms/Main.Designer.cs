@@ -47,8 +47,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.imglObjects = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -242,8 +240,6 @@
             this.pnlHeader.Controls.Add(this.btnExit);
             this.pnlHeader.Controls.Add(this.btnReports);
             this.pnlHeader.Controls.Add(this.btnClear);
-            this.pnlHeader.Controls.Add(this.btnReset);
-            this.pnlHeader.Controls.Add(this.btnStop);
             this.pnlHeader.Controls.Add(this.btnStart);
             this.pnlHeader.Location = new System.Drawing.Point(12, 12);
             this.pnlHeader.Name = "pnlHeader";
@@ -279,25 +275,6 @@
             this.btnClear.Text = "Clear Canvas";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(275, 3);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(130, 38);
-            this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "Reset Simulation";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnStop
-            // 
-            this.btnStop.Location = new System.Drawing.Point(139, 3);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(130, 38);
-            this.btnStop.TabIndex = 1;
-            this.btnStop.Text = "Stop Simulation";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnStart
             // 
@@ -468,8 +445,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpnlObjects;
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Button btnExit;

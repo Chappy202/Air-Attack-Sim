@@ -72,6 +72,8 @@ namespace Program
         private void btnStart_Click(object sender, EventArgs e)
         {
             StartSim();
+            FileHandler file = new FileHandler();
+            file.addLog();
         }
 
         private void StartSim()
@@ -115,7 +117,7 @@ namespace Program
                         {
                             if (avoid.isNear(picture.Location))
                             {
-                                picture.Left -= 50;
+                                picture.Top -= 50;
                                 picture.Refresh();
                                 updateObjects();
                             }
@@ -131,7 +133,7 @@ namespace Program
                         {
                             if (avoid.isNear(picture.Location))
                             {
-                                picture.Left += 50;
+                                picture.Top += 50;
                                 picture.Refresh();
                                 updateObjects();
                             }
@@ -632,11 +634,11 @@ namespace Program
                     Obstacle.MouseUp += new MouseEventHandler(Obstacle_MouseUp);
                     Obstacle.MouseClick += new MouseEventHandler(Obstacle_Click);
                     pnlCanvas.Controls.Add(Obstacle);
-                    data.addObstacle(name, Obstacle.Location.X, Obstacle.Location.Y);
+                    data.addObstacle(name, Obstacle.Left, Obstacle.Top);
                     if (imglObjects.Images.Keys[imageSet] == "start.png")
                     {
-                        startx = x;
-                        starty = y;
+                        startx = Obstacle.Left;
+                        starty = Obstacle.Top;
                     }
                 }
             }

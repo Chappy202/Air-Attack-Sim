@@ -33,8 +33,8 @@
             this.lblSuccess = new System.Windows.Forms.Label();
             this.lblSuccessLabel = new System.Windows.Forms.Label();
             this.pnlDescription = new System.Windows.Forms.Panel();
-            this.lblDescriptionLabel = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
+            this.lblDescriptionLabel = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblTimeLabel = new System.Windows.Forms.Label();
             this.lblTarget = new System.Windows.Forms.Label();
@@ -112,6 +112,15 @@
             this.pnlDescription.Size = new System.Drawing.Size(413, 54);
             this.pnlDescription.TabIndex = 4;
             // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(4, 5);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(122, 13);
+            this.lblDescription.TabIndex = 0;
+            this.lblDescription.Text = "No Description Provided";
+            // 
             // lblDescriptionLabel
             // 
             this.lblDescriptionLabel.AutoSize = true;
@@ -121,15 +130,6 @@
             this.lblDescriptionLabel.Size = new System.Drawing.Size(157, 20);
             this.lblDescriptionLabel.TabIndex = 5;
             this.lblDescriptionLabel.Text = "Strike Description:";
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(4, 5);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(122, 13);
-            this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "No Description Provided";
             // 
             // lblTime
             // 
@@ -406,6 +406,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmResults";
             this.Text = "Results";
+            this.Load += new System.EventHandler(this.frmResults_Load);
             this.pnlDescription.ResumeLayout(false);
             this.pnlDescription.PerformLayout();
             this.pnlReason.ResumeLayout(false);

@@ -32,10 +32,11 @@ namespace Program
         public int imageSet = 10;
         public string imageName = String.Empty;
         private bool busy = false;
-        private int startx, starty;
+        private int startx, starty, endx, endy;
 
         // Handlers
         private DataHandler data = new DataHandler();
+        private Globals values = new Globals();
 
         // Canvas Items
         List<Plane> allJets = new List<Plane>();
@@ -226,6 +227,10 @@ namespace Program
                             updateObjects();
                             picture.Refresh();
                             frmResults result = new frmResults();
+                            values.success = 100.0;
+                            values.start = ("(" + startx.ToString() + ", " + starty + ")");
+                            values.end = ("(" + endx.ToString() + ", " + endy + ")");
+                            values.target = ("(" + endx.ToString() + ", " + endy + ")");
                             result.ShowDialog();
                         }
                     }
@@ -640,6 +645,12 @@ namespace Program
                         startx = Obstacle.Left;
                         starty = Obstacle.Top;
                     }
+
+                    if (imglObjects.Images.Keys[imageSet] == "finish.png")
+                    {
+                        endx = Obstacle.Left;
+                        endy = Obstacle.Top;
+                    }
                 }
             }
             
@@ -687,6 +698,11 @@ namespace Program
             {
                 startx = activeControl.Location.X;
                 starty = activeControl.Location.Y;
+            }
+            if (activeControl.Tag == "finish.png")
+            {
+                endx = activeControl.Location.X;
+                endy = activeControl.Location.Y;
             }
             activeControl = null;
             Cursor = Cursors.Default;

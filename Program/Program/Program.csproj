@@ -46,14 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DatabaseHandler.cs" />
-    <Compile Include="Classes\DataHandler.cs" />
-    <Compile Include="Classes\EventHandler.cs" />
-    <Compile Include="Classes\FileHandler.cs" />
-    <Compile Include="Classes\GenerateMap.cs" />
-    <Compile Include="Classes\Movement.cs" />
-    <Compile Include="Classes\PathFinding.cs" />
-    <Compile Include="Classes\Point.cs" />
+    <Compile Include="Classes\Avoidance.cs" />
+    <Compile Include="Classes\Obstacle.cs" />
+    <Compile Include="Classes\Plane.cs" />
+    <Compile Include="Handlers\DatabaseHandler.cs" />
+    <Compile Include="Handlers\DataHandler.cs" />
+    <Compile Include="Handlers\EventHandler.cs" />
+    <Compile Include="Handlers\ExceptionHandler.cs" />
+    <Compile Include="Handlers\FileHandler.cs" />
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>

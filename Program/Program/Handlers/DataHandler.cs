@@ -13,6 +13,7 @@ namespace Program.Classes
     {
         public static int obstacles;
         private DatabaseHandler db = new DatabaseHandler();
+        public List<Log> log = new List<Log>();
 
         public DataHandler()
         {
@@ -162,10 +163,29 @@ namespace Program.Classes
             return arr[1];
         }
 
-        public void addLog(DateTime date, double damage, double success, string targer, string start, string end, string targetname, int avoided, string reason, double fuelbefore, double fuelafter, string invbefore, string invafter)
+        public void addLog(DateTime date, double damage, double success, string target, string start, string end, string targetname, int avoided, string reason, double fuelbefore, double fuelafter, string invbefore, string invafter)
         {
             // Build the SQL query
-            // query = "INSERT INTO dbo.ObstacleLocations VALUES(\'" + name + "\'," + x + "," + y + ")";
+            string _date = date.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            string query = "INSERT INTO dbo.Log VALUES(\'" + _date + "\'," + damage + "," + success + ",\'" + target + "\',\'" +
+                start + "\',\'" + end + "\',\'" + targetname + "\'," + avoided + ",\'" + reason + "\'," + fuelbefore + "," + fuelafter +
+                ",\'" + invbefore + "\',\'" + invafter + "\')";
+
+            log.Add(new Log(date, damage, success, target, start, end, targetname, avoided, reason, fuelbefore, fuelafter, invbefore, invafter));
+            // Add the obstacle to the db
+            SqlCommand cmd = new SqlCommand(query, db.database);
+            try
+            {
+                db.database.Open();
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                if (db.database != null)
+                {
+                    db.database.Close();
+                }
+            }
         }
 
         public void clearLocations()

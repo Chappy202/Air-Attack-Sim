@@ -118,7 +118,7 @@ namespace Program
                         {
                             if (avoid.isNear(picture.Location))
                             {
-                                picture.Top -= 50;
+                                picture.Top -= 10;
                                 picture.Refresh();
                                 updateObjects();
                             }
@@ -134,7 +134,7 @@ namespace Program
                         {
                             if (avoid.isNear(picture.Location))
                             {
-                                picture.Top += 50;
+                                picture.Top += 10;
                                 picture.Refresh();
                                 updateObjects();
                             }
@@ -227,10 +227,8 @@ namespace Program
                             updateObjects();
                             picture.Refresh();
                             frmResults result = new frmResults();
-                            values.success = 100.0;
-                            values.start = ("(" + startx.ToString() + ", " + starty + ")");
-                            values.end = ("(" + endx.ToString() + ", " + endy + ")");
-                            values.target = ("(" + endx.ToString() + ", " + endy + ")");
+                            data.addLog(DateTime.Now, 0.0, 100.0, "(" + endx.ToString() + ", " + endy.ToString() + ")", "(" + startx.ToString() + ", " + starty.ToString() + ")",
+                                "(" + endx.ToString() + ", " + endy.ToString() + ")", "End", 0, "No reason", 100.0, 100.0, "Full", "Halfway");
                             result.ShowDialog();
                         }
                     }
